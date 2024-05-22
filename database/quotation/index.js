@@ -10,7 +10,7 @@ const client = await createSupabaseClient();
 
 
 Endpoint.get('/', async (req, res) => {
-    const { data, error } = await client.from("design").select("*");
+    const { data, error } = await client.from("quotation").select("*");
     if (error) {
         return res.status(500).json({ error: error.message });
     }
