@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const app = express();
-const port = process.env.HOST || 8080;
+const port = process.env.PORT || 8080;
 
 
 import customers from "./database/customers/index.js";
